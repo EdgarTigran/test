@@ -1,0 +1,36 @@
+.header {
+    padding: 10px;
+    text-align: center;
+    background: white;
+}
+a:link {
+    background-color: red;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 4px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid gray;
+    float: left;
+    width: 300px;
+    }
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+ 
+       
