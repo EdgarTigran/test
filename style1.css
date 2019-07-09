@@ -1,50 +1,75 @@
+* {
+  box-sizing: border-box;
+}
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
   }
-ul {
+  .header {
+    background-color: #9C9A9A;
+    text-align: center;
+    font-size: 100px; 
+  }
+  ul {
+    border: 1px solid white;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(156, 154, 154);
-    position: fixed;
+    background-color: #9C9A9A;
+    position: sticky;
     top: 0;
     width: 100%;
   }
-li {
+    li {
     float: left;
     border-left:1px solid white;
-  }
-li a {
-    display: inline-block;
-    color: white;
+    }
+    li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover {
+      background-color: black;
+    }
+    input[type=text] {
+      width: 100%;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+    }
+    .home {
+      background-color: red;
+    }
+    img {
+      border: 1px solid white;
+      width: 100%;
+      height: auto;
+      padding: 5px;    
+    }
+    img:hover {
+      border: 1px solid black;
+    }
+    .gallery {
+      margin-top: 5px;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      grid-column-gap: 10px  
+    } 
+  .foot {
+    background-color: #9C9A9A;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  input[type=text] {
-    width: 1000px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-  }
-  .home {
-    background-color: red;
-  }
-  div.gallery {
-    margin: 10px;
-    float: left;
-    width: 240px;
-  }
-  div.gallery img {
-    width: 100%;
-    height:auto;
-  }
+    font-size: 100px;
+  }   
+ 
+
   
 
 
