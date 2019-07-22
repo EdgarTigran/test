@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  }
+  .grid-container>div {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 10px  
+  }
+
+   ul.nawbar {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    border: 1px solid #9C9A9A;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+    li {
+    float: left;
+    }
+    li a {
+      background-color:white;
+      display: inline-block;
+      color: gray;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover {
+      background-color:lightgray;
+    }
+    li a.home {
+      background-color: red;
+      color: white;
+    }
+    input[type=text] {
+      width: 1000px;
+      margin-left: 5px;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: #EFEFEF;
+      background-position: 10px 10px; 
+      background-repeat: no-repeat;
+      padding: 12px 20px 12px 40px;
+    } 
+   
+    .item2 {
+      grid-column-start: 3;
+      grid-column-end: 6;
+      display: block;
+      margin-top: 50px;
+      margin-bottom: 70px;
+      float:left;
+      width: 100%;
+      text-align: right;
+    }
+    ul.mininawbar {
+      width: 100%;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: white;
+      position: sticky;
+      top: 48px;
+    }
+      ul.mininawbar li a {
+        display: inline-block;
+        color:darkgray;
+        text-align: center;
+        padding: 14px 16px;
+        font-weight: bold;
+      }
+      ul.mininawbar li a:hover {
+        background-color: lightgray;
+      }
+      .mainimg {
+        position: relative;
+        width: 55%;
+        float: left;
+      }
+      .content {
+        text-align: left;
+        padding: 5px;
+      }
+      .title {
+        grid-column-start: 1;
+        grid-column-end: 8;
+        font-size: 30px;
+        text-align: center;
+      } 
+     
+    img {
+      border: 1px solid white;
+      width: 100%;
+      height: auto;
+      padding: 5px;    
+    }
+    img:hover {
+      border: 1px solid black;
+    }
+    
+  
+ 
