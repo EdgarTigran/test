@@ -38,12 +38,19 @@ body {
 .icon {
     color: #000;
 }
+.orakl {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+
+}
 .title {
     font-size: 60px;
     font-family: 'Dancing Script', cursive;
     overflow: hidden;
     position: relative;
-    margin-top: 100px;
+    
     text-align: center;
     white-space: nowrap;
 }
