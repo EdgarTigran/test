@@ -76,3 +76,47 @@ body {
 .minititle {
     text-align: center;
 }
+.grid-container>div {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 30px  
+}
+img.title-img {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    width: 100%;
+    }
+.part1 {
+    margin-top: 30px;
+    display: grid;
+    height: 400px;
+
+}
+.item2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-gap: 10px;
+    width: 100%;
+    
+}
+.item3 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-gap: 10px;
+    width: 100%;
+     
+}
+.item4 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-gap: 10px;
+    width: 100%;
+       
+}
+img.bgg {
+    width: 100%;
+}
+.content {
+    text-align:center;
+    padding:0 200px; 
+}
