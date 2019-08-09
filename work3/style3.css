@@ -11,18 +11,21 @@ body {
     background-color: #FFCDD2;
     margin: 0;
 }
+ a {
+    text-decoration: none;
+}
 .inner {
     background-color: #FFFFFF;
     margin: 400px 70px 0px 70px;
     box-shadow: 5px 4px 8px 0 #808080, 0 6px 20px 0 #808080;
     z-index: 1000;
-
 }
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .header_inner{
     display: flex;
     justify-content: space-between;
@@ -49,6 +52,8 @@ body {
 }
 .icon {
     color: #000;
+    font-size: 24px;
+    text-decoration: none;
 }
 .orakl {
     display: block;
@@ -177,6 +182,8 @@ img.title-img {
 }
 .iconfooter {
     text-align: right;
+    font-size: 24px;
+    text-decoration: none;
 }
 
 .titles {
@@ -191,6 +198,7 @@ img.title-img {
 .navfooter {
     margin: 100px;
     list-style-type: none;
+    padding: 0;
 }
 
 li a {
@@ -208,3 +216,150 @@ li a {
 li:first-child a {
     color:#EBB6BE;
 }
+@media (max-width:1200px) { 
+    .titlefavorit {
+        font-size:45px;
+       }
+    .favoritcontent {
+        font-size:15px;
+       }
+    .textfavorit {
+        padding: 30px 20px;  
+    } 
+    }
+@media (max-width:900px) {
+    .inner {
+        margin: 180px 15px 0 15px;
+    }
+    .nav {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    .content {
+        font-size: 0.5em;
+        padding: 10px;
+    }
+    .title {
+        font-size: 40px
+    }
+    .titlefavorit {
+        font-size:30px;
+       }
+    .favoritcontent {
+        font-size:12px;
+       }
+    .morefavorit {
+        font-size: 12px;
+    }
+    .items {
+        margin: 50px 0 50px 50px;
+        font-size: 12px;
+    }
+    .titles {
+        margin: 50px;
+    }
+    .titlefooter {
+        font-size: 20px;
+    }
+    .navfooter {
+        margin: 50px;
+    }
+    .readmore {
+        font-size: 12px;
+    }
+    .navfooter {
+        font-size: 12px;
+    }
+    .minititlefooter {
+        font-size: 12px;
+    }
+    .icon,.iconfooter {
+        font-size: 18px;
+    }
+}
+@media (max-width:700px) {
+    .nav {
+        font-size: 13px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .center {
+        font-size: 14px;
+    }
+    .inner {
+        margin: 80px 25px 0 25px;
+    }
+    .icon,.iconfooter {
+        font-size: 12px;
+    }
+    input {
+        padding: 5px;
+    }
+    input[type=submit] {
+        padding: 8px 16px;
+    }
+    .textfavorit {
+        
+        padding: 10px;  
+    }   
+@media (max-width:500px) {
+    .nav {
+        font-size: 10px;
+     }
+    .title {
+        font-size: 20px;
+    }
+    .inner {
+        margin: 50px 5px 0 5px;
+        box-shadow: none;
+    }
+    .icon,.iconfooter {
+        font-size: 10px;
+    }
+    .titlefavorit {
+        font-size:20px;
+    }
+    .favoritcontent {
+        font-size:8px;
+    }
+    .morefavorit {
+        font-size: 8px;
+    }
+    .items {
+        margin: 15px 0 15px 15px;
+        font-size: 8px;
+    }
+    .icon,.iconfooter {
+        font-size: 8px;
+    }
+    .navfooter {
+        margin: 15px;
+    }
+    .readmore {
+        font-size: 8px;
+    }
+    .navfooter {
+        font-size: 8px;
+    }
+    .minititlefooter {
+        font-size: 8px;
+    }
+    .titles {
+        margin: 15px;
+    }
+    h2 {
+        font-size: 0.8em;
+    }
+    .center {
+        font-size: 10px;
+    }
+    .readmore {
+        font-size: 6px;
+    }
+    .textfavorit {
+        
+        padding:5px;  
+    }   
