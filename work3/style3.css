@@ -24,37 +24,60 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    height: 160px;
 }
 
 .header_inner{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-top: 20px;
 }
-.nav {
-    font-size: 18px;
-
-}
-.nav_link {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+li.himn{
+    float: left;
+  } 
+li a {
     color:#C6C6C6;
+    text-decoration: none;    
+    display: block;    
+} 
+.nav_link,.subnav {
+    text-align: center;
+    color:#C6C6C6;
+    font-size: 18px;
     text-decoration: none;
-    border-right: 2px solid #C6C6C6;
-    display: inline-block;
-    vertical-align: top;
-    padding: 7px;
+    display: block;
+    width: 80px;
+    height: 40px;
+    padding: 3px;
 }
-.nav_link:first-child {
-    color: #E1C9CF;
+.nav_link:hover {
+    color: rgb(241, 127, 142);
 }
-.nav_link:last-child {
-    border-right: none;
+ .nav_link,.subnav:first-child { 
+     color: #E1C9CF; 
 }
+ .nav_link:first-child:hover {
+    color: rgb(241, 127, 142);
+}
+.subnav:hover {
+    color: rgb(241, 127, 142);
+} 
+#nav>ul>li>ul {
+     
+    display: none;
+}      
 .icon {
     color: #000;
     font-size: 24px;
     text-decoration: none;
 }
+
 .orakl {
     display: block;
     text-align: center;
@@ -150,6 +173,9 @@ img.title-img {
     padding: 5px 15px;
     text-align: center; 
 }
+.morefavorit:hover {
+    color: #FFFFFF;
+}
 .part3 {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -204,14 +230,16 @@ img.title-img {
 li a {
     color:#000;
     text-decoration: none;
-    display: block;
-   
+    display: block;   
     text-align: right;
     padding: 5px;
 }
 .nav_linkfoot {
     padding: 7px;
     color: #000;
+}
+.nav_linkfoot:hover {
+    color: rgb(241, 127, 142);
 }
 li:first-child a {
     color:#EBB6BE;
@@ -231,9 +259,7 @@ li:first-child a {
     .inner {
         margin: 180px 15px 0 15px;
     }
-    .nav {
-        font-size: 16px;
-    }
+    
     h2 {
         font-size: 1em;
     }
@@ -280,8 +306,10 @@ li:first-child a {
     }
 }
 @media (max-width:700px) {
-    .nav {
-        font-size: 13px;
+    .nav_link,.subnav {
+        font-size: 14px;
+        width: 60px;
+        height: 30px;
     }
     .title {
         font-size: 30px;
@@ -306,9 +334,11 @@ li:first-child a {
         padding: 10px;  
     }   
 @media (max-width:500px) {
-    .nav {
+    .nav_link,.subnav {
         font-size: 10px;
-     }
+        width: 40px;
+        
+    }
     .title {
         font-size: 20px;
     }
@@ -360,6 +390,5 @@ li:first-child a {
         font-size: 6px;
     }
     .textfavorit {
-        
         padding:5px;  
     }   
